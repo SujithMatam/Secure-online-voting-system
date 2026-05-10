@@ -1,0 +1,93 @@
+{% extends "base.html" %}
+{% block title %}Create Election - Admin{% endblock %}
+
+{% block content %}
+<div class="admin-section">
+    <h1>Create Election</h1>
+
+    <form method="POST" action="{{ url_for('admin.create_election') }}" id="createElectionForm">
+        <input type="hidden" name="csrf_token" value="{{ csrf_token() }}">
+
+        <div class="form-group">
+            <label for="title">Election Title</label>
+            <input type="text" id="title" name="title" required
+                   placeholder="e.g., Student Council Election 2026">
+        </div>
+
+        <div class="form-group">
+            <label for="description">Description</label>
+            <textarea id="description" name="description" rows="3"
+                      placeholder="Brief description of the election"></textarea>
+        </div>
+
+        <div id="candidatesSection">
+            <h3>Candidates (minimum 2)</h3>
+
+            <div class="candidate-entry" id="candidate-1">
+                <div class="form-group">
+                    <label>Candidate 1 Name</label>
+                    <input type="text" name="candidate_name" required placeholder="Full name">
+                </div>
+                <div class="form-group">
+                    <label>Party / Affiliation</label>
+                    <input type="text" name="candidate_party" placeholder="Party name (optional)">
+                </div>
+            </div>
+
+            <div class="candidate-entry" id="candidate-2">
+                <div class="form-group">
+                    <label>Candidate 2 Name</label>
+                    <input type="text" name="candidate_name" required placeholder="Full name">
+                </div>
+                <div class="form-group">
+                    <label>Party / Affiliation</label>
+                    <input type="text" name="candidate_party" placeholder="Party name (optional)">
+                </div>
+            </div>
+        </div>
+
+        <button type="button" class="btn btn-secondary" onclick="addCandidate()">
+            + Add Candidate
+        </button>
+
+        <br><br>
+        <button type="submit" class="btn btn-primary">Create Election</button>
+        <a href="{{ url_for('admin.dashboard') }}" class="btn btn-secondary">Cancel</a>
+    </form>
+</div>
+
+<script>
+let candidateCount = 2;
+
+function addCandidate() {
+    candidateCount++;
+    const section = document.getElementById('candidatesSection');
+    const div = document.createElement('div');
+    div.className = 'candidate-entry';
+    div.id = 'candidate-' + candidateCount;
+    div.innerHTML = `
+        <div class="form-group">
+            <label>Candidate ${candidateCount} Name</label>
+            <input type="text" name="candidate_name" required placeholder="Full name">
+        </div>
+        <div class="form-group">
+            <label>Party / Affiliation</label>
+            <input type="text" name="candidate_party" placeholder="Party name (optional)">
+        </div>
+        <button type="button" class="btn btn-danger btn-sm" onclick="removeCandidate(${candidateCount})">
+            Remove
+        </button>
+    `;
+    section.appendChild(div);
+}
+
+function removeCandidate(id) {
+    if (candidateCount <= 2) {
+        alert('Minimum 2 candidates required.');
+        return;
+    }
+    document.getElementById('candidate-' + id).remove();
+    candidateCount--;
+}
+</script>
+{% endblock %}

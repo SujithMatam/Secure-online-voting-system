@@ -1,0 +1,62 @@
+{% extends "base.html" %}
+{% block title %}Register - Secure Voting{% endblock %}
+
+{% block content %}
+<div class="auth-container">
+    <h1>Voter Registration</h1>
+    <p class="auth-subtitle">Create an account to participate in elections</p>
+
+    <form method="POST" action="{{ url_for('auth.register') }}" id="registerForm">
+        <input type="hidden" name="csrf_token" value="{{ csrf_token() }}">
+
+        <div class="form-group">
+            <label for="username">Username</label>
+            <input type="text" id="username" name="username" required
+                   minlength="3" maxlength="30"
+                   placeholder="Choose a username (3-30 chars)">
+        </div>
+
+        <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required
+                   placeholder="Enter your email address">
+        </div>
+
+        <div class="form-group">
+            <label for="voter_id">Voter ID</label>
+            <input type="text" id="voter_id" name="voter_id" required
+                   pattern="[A-Za-z0-9]{6,12}"
+                   placeholder="6-12 alphanumeric characters (e.g., ABC123)">
+        </div>
+
+        <div class="form-group">
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" required
+                   minlength="8"
+                   placeholder="Min 8 chars, upper+lower+digit+special">
+        </div>
+
+        <div class="form-group">
+            <label for="confirm_password">Confirm Password</label>
+            <input type="password" id="confirm_password" name="confirm_password" required
+                   placeholder="Re-enter your password">
+        </div>
+
+        <button type="submit" class="btn btn-primary" id="registerBtn">Register</button>
+    </form>
+
+    <p class="auth-link">Already have an account? <a href="{{ url_for('auth.login') }}">Login here</a></p>
+
+    <div class="security-info">
+        <h3>🔑 Password Requirements</h3>
+        <ul>
+            <li>Minimum 8 characters</li>
+            <li>At least one uppercase letter (A-Z)</li>
+            <li>At least one lowercase letter (a-z)</li>
+            <li>At least one digit (0-9)</li>
+            <li>At least one special character (!@#$%^&*)</li>
+        </ul>
+        <p><strong>Note:</strong> Your account must be verified by an admin before you can vote.</p>
+    </div>
+</div>
+{% endblock %}

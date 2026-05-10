@@ -1,0 +1,37 @@
+{% extends "base.html" %}
+{% block title %}Vote Receipt{% endblock %}
+
+{% block content %}
+<div class="receipt-container">
+    <h1>✅ Vote Confirmation</h1>
+
+    <div class="receipt-card">
+        <h2>Vote Receipt</h2>
+        <table class="receipt-table">
+            <tr>
+                <th>Election</th>
+                <td>{{ election.title }}</td>
+            </tr>
+            <tr>
+                <th>Receipt ID</th>
+                <td><code>{{ vote.vote_receipt }}</code></td>
+            </tr>
+            <tr>
+                <th>Vote Hash (SHA-256)</th>
+                <td><code class="hash">{{ vote.vote_hash }}</code></td>
+            </tr>
+            <tr>
+                <th>Timestamp</th>
+                <td>{{ vote.timestamp.strftime('%Y-%m-%d %H:%M:%S UTC') }}</td>
+            </tr>
+        </table>
+
+        <div class="alert alert-info">
+            🔒 Save your <strong>Receipt ID</strong> for verification purposes.
+            The vote hash ensures the integrity of your vote.
+        </div>
+    </div>
+
+    <a href="{{ url_for('voting.dashboard') }}" class="btn btn-primary">Back to Dashboard</a>
+</div>
+{% endblock %}

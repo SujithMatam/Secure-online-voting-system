@@ -1,0 +1,55 @@
+{% extends "base.html" %}
+{% block title %}Manage Elections - Admin{% endblock %}
+
+{% block content %}
+<div class="admin-section">
+    <h1>Manage Elections</h1>
+    <a href="{{ url_for('admin.create_election') }}" class="btn btn-primary">+ Create New Election</a>
+
+    <table class="data-table" style="margin-top: 20px;">
+        <thead>
+            <tr>
+                <th>Title</th>
+                <th>Candidates</th>
+                <th>Votes Cast</th>
+                <th>Status</th>
+                <th>Created</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for election in elections %}
+            <tr>
+                <td>{{ election.title }}</td>
+                <td>{{ election.candidates | length }}</td>
+                <td>{{ election.vote_count }}</td>
+                <td>
+                    {% if election.status == 'active' %}
+                        <span class="badge badge-success">Active</span>
+                    {% else %}
+                        <span class="badge badge-secondary">Completed</span>
+                    {% endif %}
+                </td>
+                <td>{{ election.created_at.strftime('%Y-%m-%d %H:%M') }}</td>
+                <td>
+                    {% if election.status == 'active' %}
+                        <form method="POST" action="{{ url_for('admin.end_election', election_id=election._id) }}"
+                              style="display:inline"
+                              onsubmit="return confirm('End this election? Results will become public.')">
+                            <input type="hidden" name="csrf_token" value="{{ csrf_token() }}">
+                            <button type="submit" class="btn btn-danger btn-sm">End Election</button>
+                        </form>
+                    {% endif %}
+                    <a href="{{ url_for('voting.results', election_id=election._id) }}"
+                       class="btn btn-secondary btn-sm">Results</a>
+                </td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+
+    {% if not elections %}
+        <p>No elections created yet.</p>
+    {% endif %}
+</div>
+{% endblock %}

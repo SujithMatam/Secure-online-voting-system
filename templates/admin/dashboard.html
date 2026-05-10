@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+{% block title %}Admin Dashboard{% endblock %}
+
+{% block content %}
+<div class="admin-dashboard">
+    <h1>Admin Dashboard</h1>
+
+    <div class="stats-grid">
+        <div class="stat-card">
+            <h3>{{ total_users }}</h3>
+            <p>Registered Voters</p>
+        </div>
+        <div class="stat-card">
+            <h3>{{ verified_users }}</h3>
+            <p>Verified Voters</p>
+        </div>
+        <div class="stat-card">
+            <h3>{{ active_elections }}</h3>
+            <p>Active Elections</p>
+        </div>
+        <div class="stat-card">
+            <h3>{{ total_votes }}</h3>
+            <p>Total Votes Cast</p>
+        </div>
+    </div>
+
+    <div class="admin-actions">
+        <h2>Quick Actions</h2>
+        <a href="{{ url_for('admin.manage_users') }}" class="btn btn-primary">Manage Users</a>
+        <a href="{{ url_for('admin.create_election') }}" class="btn btn-primary">Create Election</a>
+        <a href="{{ url_for('admin.manage_elections') }}" class="btn btn-secondary">Manage Elections</a>
+        <a href="{{ url_for('admin.audit_log') }}" class="btn btn-secondary">View Audit Log</a>
+    </div>
+</div>
+{% endblock %}

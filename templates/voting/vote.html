@@ -1,0 +1,48 @@
+{% extends "base.html" %}
+{% block title %}Cast Vote - {{ election.title }}{% endblock %}
+
+{% block content %}
+<div class="vote-container">
+    <h1>Cast Your Vote</h1>
+    <h2>{{ election.title }}</h2>
+    <p>{{ election.description }}</p>
+
+    <div class="alert alert-info">
+        🔒 Your vote is encrypted and anonymous. You will receive a receipt after voting.
+        <br>⚠️ You can only vote <strong>once</strong> per election. This action cannot be undone.
+    </div>
+
+    <form method="POST" action="{{ url_for('voting.cast_vote', election_id=election._id) }}"
+          id="voteForm" onsubmit="return confirmVote()">
+        <input type="hidden" name="csrf_token" value="{{ csrf_token() }}">
+
+        <div class="candidates-list">
+            {% for candidate in election.candidates %}
+            <div class="candidate-option">
+                <input type="radio" id="candidate_{{ candidate.id }}"
+                       name="candidate" value="{{ candidate.id }}" required>
+                <label for="candidate_{{ candidate.id }}">
+                    <strong>{{ candidate.name }}</strong>
+                    <span class="party">{{ candidate.party }}</span>
+                </label>
+            </div>
+            {% endfor %}
+        </div>
+
+        <button type="submit" class="btn btn-primary" id="submitVoteBtn">
+            Submit Vote
+        </button>
+        <a href="{{ url_for('voting.dashboard') }}" class="btn btn-secondary">Cancel</a>
+    </form>
+</div>
+
+<script>
+function confirmVote() {
+    return confirm(
+        'Are you sure you want to submit your vote?\n\n' +
+        'This action CANNOT be undone.\n' +
+        'You can only vote ONCE in this election.'
+    );
+}
+</script>
+{% endblock %}

@@ -1,0 +1,40 @@
+{% extends "base.html" %}
+{% block title %}Results - {{ election.title }}{% endblock %}
+
+{% block content %}
+<div class="results-container">
+    <h1>Election Results</h1>
+    <h2>{{ election.title }}</h2>
+    <p>{{ election.description }}</p>
+    <p><strong>Total Votes Cast:</strong> {{ total_votes }}</p>
+
+    <table class="results-table">
+        <thead>
+            <tr>
+                <th>Candidate</th>
+                <th>Party</th>
+                <th>Votes</th>
+                <th>Percentage</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for cid, data in results.items() %}
+            <tr>
+                <td>{{ data.name }}</td>
+                <td>{{ data.party }}</td>
+                <td>{{ data.votes }}</td>
+                <td>
+                    {% if total_votes > 0 %}
+                        {{ "%.1f"|format(data.votes / total_votes * 100) }}%
+                    {% else %}
+                        0%
+                    {% endif %}
+                </td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+
+    <a href="{{ url_for('voting.dashboard') }}" class="btn btn-secondary">Back to Dashboard</a>
+</div>
+{% endblock %}

@@ -1,0 +1,153 @@
+{% extends "base.html" %}
+{% block title %}Security Features - Secure Voting System{% endblock %}
+
+{% block content %}
+<div class="security-page">
+    <h1>🔐 Security Features Implemented</h1>
+    <p>This application implements comprehensive security measures across three key areas:</p>
+
+    <section class="section">
+        <h2>1. Authentication & Authorization</h2>
+        <table class="data-table">
+            <thead>
+                <tr>
+                    <th>Feature</th>
+                    <th>Implementation</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>Password Hashing</strong></td>
+                    <td>bcrypt with 12 rounds of salting — passwords are never stored in plaintext</td>
+                </tr>
+                <tr>
+                    <td><strong>Role-Based Access Control (RBAC)</strong></td>
+                    <td>Two roles: <code>admin</code> and <code>voter</code>. Decorators enforce access: <code>@login_required</code>, <code>@admin_required</code>, <code>@verified_required</code></td>
+                </tr>
+                <tr>
+                    <td><strong>Account Lockout</strong></td>
+                    <td>After 5 failed login attempts, account is locked for 15 minutes</td>
+                </tr>
+                <tr>
+                    <td><strong>Session Security</strong></td>
+                    <td>HttpOnly cookies, SameSite=Lax, 30-minute session timeout, Cache-Control: no-store</td>
+                </tr>
+                <tr>
+                    <td><strong>Admin Voter Verification</strong></td>
+                    <td>Admin must verify voter identity before they can cast votes</td>
+                </tr>
+                <tr>
+                    <td><strong>Strong Password Policy</strong></td>
+                    <td>Minimum 8 chars, requires uppercase, lowercase, digit, and special character</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <section class="section">
+        <h2>2. Input Validation & Attack Prevention</h2>
+        <table class="data-table">
+            <thead>
+                <tr>
+                    <th>Attack Vector</th>
+                    <th>Prevention Method</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>Cross-Site Scripting (XSS)</strong></td>
+                    <td>Input sanitization with <code>bleach</code> library + Jinja2 auto-escaping + Content-Security-Policy header</td>
+                </tr>
+                <tr>
+                    <td><strong>Cross-Site Request Forgery (CSRF)</strong></td>
+                    <td>Flask-WTF CSRF tokens on every form — all POST requests validated</td>
+                </tr>
+                <tr>
+                    <td><strong>NoSQL Injection</strong></td>
+                    <td>Input type checking (ensures strings, not objects) + sanitization before DB queries</td>
+                </tr>
+                <tr>
+                    <td><strong>Brute Force Attacks</strong></td>
+                    <td>Rate limiting: Login (5/min), Register (3/min), Voting (10/min) + Account lockout</td>
+                </tr>
+                <tr>
+                    <td><strong>Clickjacking</strong></td>
+                    <td><code>X-Frame-Options: DENY</code> header prevents embedding in iframes</td>
+                </tr>
+                <tr>
+                    <td><strong>MIME Sniffing</strong></td>
+                    <td><code>X-Content-Type-Options: nosniff</code> header</td>
+                </tr>
+                <tr>
+                    <td><strong>Username Enumeration</strong></td>
+                    <td>Generic "Invalid credentials" message for both wrong username and wrong password</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <section class="section">
+        <h2>3. Data Protection</h2>
+        <table class="data-table">
+            <thead>
+                <tr>
+                    <th>Feature</th>
+                    <th>Implementation</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>Password Storage</strong></td>
+                    <td>bcrypt hashing with unique salt per password (12 rounds) — irreversible</td>
+                </tr>
+                <tr>
+                    <td><strong>Vote Integrity</strong></td>
+                    <td>Each vote gets a SHA-256 hash with random nonce — tamper detection</td>
+                </tr>
+                <tr>
+                    <td><strong>Vote Receipts</strong></td>
+                    <td>Unique cryptographic receipt token for each vote for voter verification</td>
+                </tr>
+                <tr>
+                    <td><strong>HTTPS Enforcement</strong></td>
+                    <td><code>Strict-Transport-Security</code> header forces HTTPS in production</td>
+                </tr>
+                <tr>
+                    <td><strong>Secure Cookies</strong></td>
+                    <td>HttpOnly (no JS access), SameSite=Lax (CSRF protection)</td>
+                </tr>
+                <tr>
+                    <td><strong>Cache Prevention</strong></td>
+                    <td><code>Cache-Control: no-store</code> prevents sensitive data caching / back-button attacks</td>
+                </tr>
+                <tr>
+                    <td><strong>Audit Logging</strong></td>
+                    <td>All actions logged with timestamp, IP address, user agent — stored in DB + file</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <section class="section">
+        <h2>Security Headers Applied</h2>
+        <table class="data-table">
+            <thead>
+                <tr>
+                    <th>Header</th>
+                    <th>Value</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr><td><code>X-Content-Type-Options</code></td><td>nosniff</td></tr>
+                <tr><td><code>X-Frame-Options</code></td><td>DENY</td></tr>
+                <tr><td><code>X-XSS-Protection</code></td><td>1; mode=block</td></tr>
+                <tr><td><code>Strict-Transport-Security</code></td><td>max-age=31536000; includeSubDomains</td></tr>
+                <tr><td><code>Content-Security-Policy</code></td><td>default-src 'self'; style-src 'self' 'unsafe-inline'; script-src 'self'</td></tr>
+                <tr><td><code>Referrer-Policy</code></td><td>strict-origin-when-cross-origin</td></tr>
+                <tr><td><code>Permissions-Policy</code></td><td>camera=(), microphone=(), geolocation=()</td></tr>
+                <tr><td><code>Cache-Control</code></td><td>no-store, no-cache, must-revalidate, max-age=0</td></tr>
+            </tbody>
+        </table>
+    </section>
+</div>
+{% endblock %}

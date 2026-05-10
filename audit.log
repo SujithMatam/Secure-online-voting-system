@@ -1,0 +1,248 @@
+2026-05-10 18:39:58,736 - INFO - Default admin account created (username: admin)
+2026-05-10 18:39:58,883 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2026-05-10 18:39:58,883 - INFO - [33mPress CTRL+C to quit[0m
+2026-05-10 18:39:58,885 - INFO -  * Restarting with stat
+2026-05-10 18:39:59,368 - WARNING -  * Debugger is active!
+2026-05-10 18:39:59,374 - INFO -  * Debugger PIN: 142-622-940
+2026-05-10 18:40:03,270 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2026-05-10 18:40:03,275 - INFO - [33mPress CTRL+C to quit[0m
+2026-05-10 18:40:03,276 - INFO -  * Restarting with stat
+2026-05-10 18:40:03,756 - WARNING -  * Debugger is active!
+2026-05-10 18:40:03,760 - INFO -  * Debugger PIN: 142-622-940
+2026-05-10 18:40:39,191 - INFO - 127.0.0.1 - - [10/May/2026 18:40:39] "[32mGET / HTTP/1.1[0m" 302 -
+2026-05-10 18:40:39,239 - INFO - 127.0.0.1 - - [10/May/2026 18:40:39] "GET /login HTTP/1.1" 200 -
+2026-05-10 18:40:39,307 - INFO - 127.0.0.1 - - [10/May/2026 18:40:39] "GET /static/css/style.css HTTP/1.1" 200 -
+2026-05-10 18:40:39,367 - INFO - 127.0.0.1 - - [10/May/2026 18:40:39] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2026-05-10 18:43:32,577 - INFO - 127.0.0.1 - - [10/May/2026 18:43:32] "[32mGET / HTTP/1.1[0m" 302 -
+2026-05-10 18:43:32,600 - INFO - 127.0.0.1 - - [10/May/2026 18:43:32] "GET /login HTTP/1.1" 200 -
+2026-05-10 18:43:32,619 - INFO - 127.0.0.1 - - [10/May/2026 18:43:32] "GET /static/css/style.css HTTP/1.1" 200 -
+2026-05-10 18:43:35,984 - INFO - 127.0.0.1 - - [10/May/2026 18:43:35] "GET /login HTTP/1.1" 200 -
+2026-05-10 18:43:35,999 - INFO - 127.0.0.1 - - [10/May/2026 18:43:35] "GET /static/css/style.css HTTP/1.1" 200 -
+2026-05-10 18:43:48,041 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2026-05-10 18:43:48,041 - INFO - [33mPress CTRL+C to quit[0m
+2026-05-10 18:43:48,041 - INFO -  * Restarting with stat
+2026-05-10 18:43:48,532 - WARNING -  * Debugger is active!
+2026-05-10 18:43:48,535 - INFO -  * Debugger PIN: 142-622-940
+2026-05-10 18:45:10,590 - INFO - 127.0.0.1 - - [10/May/2026 18:45:10] "[35m[1mPOST /login HTTP/1.1[0m" 500 -
+2026-05-10 18:45:10,602 - INFO - 127.0.0.1 - - [10/May/2026 18:45:10] "GET /login?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2026-05-10 18:45:10,603 - INFO - 127.0.0.1 - - [10/May/2026 18:45:10] "GET /login?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+2026-05-10 18:45:10,630 - INFO - 127.0.0.1 - - [10/May/2026 18:45:10] "GET /login?__debugger__=yes&cmd=resource&f=console.png&s=LyulyMIOuQNpujK5LhTR HTTP/1.1" 200 -
+2026-05-10 18:45:10,647 - INFO - 127.0.0.1 - - [10/May/2026 18:45:10] "GET /login?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2026-05-10 18:46:11,898 - INFO - 127.0.0.1 - - [10/May/2026 18:46:11] "[35m[1mPOST /login HTTP/1.1[0m" 500 -
+2026-05-10 18:46:11,907 - INFO - 127.0.0.1 - - [10/May/2026 18:46:11] "[36mGET /login?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2026-05-10 18:46:11,909 - INFO - 127.0.0.1 - - [10/May/2026 18:46:11] "[36mGET /login?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2026-05-10 18:46:11,914 - INFO - 127.0.0.1 - - [10/May/2026 18:46:11] "[36mGET /login?__debugger__=yes&cmd=resource&f=console.png&s=LyulyMIOuQNpujK5LhTR HTTP/1.1[0m" 304 -
+2026-05-10 18:46:11,928 - INFO - 127.0.0.1 - - [10/May/2026 18:46:11] "[36mGET /login?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2026-05-10 18:46:14,356 - INFO - 127.0.0.1 - - [10/May/2026 18:46:14] "GET /login HTTP/1.1" 200 -
+2026-05-10 18:46:14,365 - INFO - 127.0.0.1 - - [10/May/2026 18:46:14] "GET /static/css/style.css HTTP/1.1" 200 -
+2026-05-10 18:46:25,030 - INFO - 127.0.0.1 - - [10/May/2026 18:46:25] "[35m[1mPOST /login HTTP/1.1[0m" 500 -
+2026-05-10 18:46:25,042 - INFO - 127.0.0.1 - - [10/May/2026 18:46:25] "[36mGET /login?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2026-05-10 18:46:25,044 - INFO - 127.0.0.1 - - [10/May/2026 18:46:25] "[36mGET /login?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2026-05-10 18:46:25,052 - INFO - 127.0.0.1 - - [10/May/2026 18:46:25] "[36mGET /login?__debugger__=yes&cmd=resource&f=console.png&s=LyulyMIOuQNpujK5LhTR HTTP/1.1[0m" 304 -
+2026-05-10 18:46:56,002 - INFO -  * Detected change in 'C:\\Users\\Rishi Priyan\\Documents\\S6\\FCS\\Secure-online-voting-system\\app.py', reloading
+2026-05-10 18:46:56,393 - INFO -  * Restarting with stat
+2026-05-10 18:46:56,593 - INFO -  * Detected change in 'C:\\Users\\Rishi Priyan\\Documents\\S6\\FCS\\Secure-online-voting-system\\app.py', reloading
+2026-05-10 18:46:56,873 - INFO -  * Restarting with stat
+2026-05-10 18:46:56,934 - WARNING -  * Debugger is active!
+2026-05-10 18:46:56,938 - INFO -  * Debugger PIN: 142-622-940
+2026-05-10 18:46:57,442 - WARNING -  * Debugger is active!
+2026-05-10 18:46:57,447 - INFO -  * Debugger PIN: 142-622-940
+2026-05-10 18:47:12,502 - INFO -  * Detected change in 'C:\\Users\\Rishi Priyan\\Documents\\S6\\FCS\\Secure-online-voting-system\\routes\\auth.py', reloading
+2026-05-10 18:47:12,991 - INFO -  * Restarting with stat
+2026-05-10 18:47:13,409 - INFO -  * Detected change in 'C:\\Users\\Rishi Priyan\\Documents\\S6\\FCS\\Secure-online-voting-system\\routes\\auth.py', reloading
+2026-05-10 18:47:13,560 - WARNING -  * Debugger is active!
+2026-05-10 18:47:13,565 - INFO -  * Debugger PIN: 142-622-940
+2026-05-10 18:47:13,626 - INFO -  * Restarting with stat
+2026-05-10 18:47:14,166 - WARNING -  * Debugger is active!
+2026-05-10 18:47:14,170 - INFO -  * Debugger PIN: 142-622-940
+2026-05-10 18:47:26,071 - INFO -  * Detected change in 'C:\\Users\\Rishi Priyan\\Documents\\S6\\FCS\\Secure-online-voting-system\\routes\\voting.py', reloading
+2026-05-10 18:47:26,609 - INFO -  * Restarting with stat
+2026-05-10 18:47:26,690 - INFO -  * Detected change in 'C:\\Users\\Rishi Priyan\\Documents\\S6\\FCS\\Secure-online-voting-system\\routes\\voting.py', reloading
+2026-05-10 18:47:27,213 - WARNING -  * Debugger is active!
+2026-05-10 18:47:27,219 - INFO -  * Debugger PIN: 142-622-940
+2026-05-10 18:47:27,232 - INFO -  * Restarting with stat
+2026-05-10 18:47:27,811 - WARNING -  * Debugger is active!
+2026-05-10 18:47:27,816 - INFO -  * Debugger PIN: 142-622-940
+2026-05-10 18:47:28,042 - INFO -  * Detected change in 'C:\\Users\\Rishi Priyan\\Documents\\S6\\FCS\\Secure-online-voting-system\\routes\\admin.py', reloading
+2026-05-10 18:47:28,254 - INFO -  * Restarting with stat
+2026-05-10 18:47:28,781 - WARNING -  * Debugger is active!
+2026-05-10 18:47:28,786 - INFO -  * Debugger PIN: 142-622-940
+2026-05-10 18:48:00,074 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2026-05-10 18:48:00,074 - INFO - [33mPress CTRL+C to quit[0m
+2026-05-10 18:48:00,076 - INFO -  * Restarting with stat
+2026-05-10 18:48:00,568 - WARNING -  * Debugger is active!
+2026-05-10 18:48:00,571 - INFO -  * Debugger PIN: 142-622-940
+2026-05-10 18:48:09,318 - INFO - 127.0.0.1 - - [10/May/2026 18:48:09] "HEAD /login HTTP/1.1" 200 -
+2026-05-10 18:48:09,321 - INFO - 127.0.0.1 - - [10/May/2026 18:48:09] "GET /login HTTP/1.1" 200 -
+2026-05-10 18:48:51,673 - INFO - 127.0.0.1 - - [10/May/2026 18:48:51] "[32mGET / HTTP/1.1[0m" 302 -
+2026-05-10 18:48:51,708 - INFO - 127.0.0.1 - - [10/May/2026 18:48:51] "GET /login HTTP/1.1" 200 -
+2026-05-10 18:48:51,787 - INFO - 127.0.0.1 - - [10/May/2026 18:48:51] "GET /static/css/style.css HTTP/1.1" 200 -
+2026-05-10 18:49:02,394 - INFO - Successful login: admin from 127.0.0.1
+2026-05-10 18:49:02,395 - INFO - 127.0.0.1 - - [10/May/2026 18:49:02] "[32mPOST /login HTTP/1.1[0m" 302 -
+2026-05-10 18:49:02,426 - INFO - 127.0.0.1 - - [10/May/2026 18:49:02] "GET /admin/dashboard HTTP/1.1" 200 -
+2026-05-10 18:49:02,438 - INFO - 127.0.0.1 - - [10/May/2026 18:49:02] "GET /static/css/style.css HTTP/1.1" 200 -
+2026-05-10 18:49:07,320 - INFO - 127.0.0.1 - - [10/May/2026 18:49:07] "GET /admin/elections/create HTTP/1.1" 200 -
+2026-05-10 18:49:07,331 - INFO - 127.0.0.1 - - [10/May/2026 18:49:07] "GET /static/css/style.css HTTP/1.1" 200 -
+2026-05-10 20:04:23,462 - INFO - 127.0.0.1 - - [10/May/2026 20:04:23] "[32mGET /admin/elections HTTP/1.1[0m" 302 -
+2026-05-10 20:04:23,491 - INFO - 127.0.0.1 - - [10/May/2026 20:04:23] "GET /login HTTP/1.1" 200 -
+2026-05-10 20:04:23,654 - INFO - 127.0.0.1 - - [10/May/2026 20:04:23] "GET /static/css/style.css HTTP/1.1" 200 -
+2026-05-10 20:04:28,224 - INFO - Successful login: admin from 127.0.0.1
+2026-05-10 20:04:28,227 - INFO - 127.0.0.1 - - [10/May/2026 20:04:28] "[32mPOST /login HTTP/1.1[0m" 302 -
+2026-05-10 20:04:28,259 - INFO - 127.0.0.1 - - [10/May/2026 20:04:28] "GET /admin/dashboard HTTP/1.1" 200 -
+2026-05-10 20:04:28,298 - INFO - 127.0.0.1 - - [10/May/2026 20:04:28] "GET /static/css/style.css HTTP/1.1" 200 -
+2026-05-10 20:04:31,046 - INFO - 127.0.0.1 - - [10/May/2026 20:04:31] "GET /admin/audit-log HTTP/1.1" 200 -
+2026-05-10 20:04:31,069 - INFO - 127.0.0.1 - - [10/May/2026 20:04:31] "GET /static/css/style.css HTTP/1.1" 200 -
+2026-05-10 20:04:33,443 - INFO - 127.0.0.1 - - [10/May/2026 20:04:33] "GET /admin/elections HTTP/1.1" 200 -
+2026-05-10 20:04:33,467 - INFO - 127.0.0.1 - - [10/May/2026 20:04:33] "GET /static/css/style.css HTTP/1.1" 200 -
+2026-05-10 20:04:35,231 - INFO - 127.0.0.1 - - [10/May/2026 20:04:35] "GET /admin/users HTTP/1.1" 200 -
+2026-05-10 20:04:35,255 - INFO - 127.0.0.1 - - [10/May/2026 20:04:35] "GET /static/css/style.css HTTP/1.1" 200 -
+2026-05-10 20:04:38,663 - INFO - 127.0.0.1 - - [10/May/2026 20:04:38] "GET /admin/dashboard HTTP/1.1" 200 -
+2026-05-10 20:04:38,680 - INFO - 127.0.0.1 - - [10/May/2026 20:04:38] "GET /static/css/style.css HTTP/1.1" 200 -
+2026-05-10 20:04:42,556 - INFO - 127.0.0.1 - - [10/May/2026 20:04:42] "GET /admin/elections/create HTTP/1.1" 200 -
+2026-05-10 20:04:42,568 - INFO - 127.0.0.1 - - [10/May/2026 20:04:42] "GET /static/css/style.css HTTP/1.1" 200 -
+2026-05-10 20:05:12,266 - INFO - Election created: RRR by admin admin
+2026-05-10 20:05:12,268 - INFO - 127.0.0.1 - - [10/May/2026 20:05:12] "[32mPOST /admin/elections/create HTTP/1.1[0m" 302 -
+2026-05-10 20:05:12,281 - INFO - 127.0.0.1 - - [10/May/2026 20:05:12] "GET /admin/dashboard HTTP/1.1" 200 -
+2026-05-10 20:05:12,297 - INFO - 127.0.0.1 - - [10/May/2026 20:05:12] "GET /static/css/style.css HTTP/1.1" 200 -
+2026-05-10 20:05:16,631 - INFO - 127.0.0.1 - - [10/May/2026 20:05:16] "GET /admin/elections HTTP/1.1" 200 -
+2026-05-10 20:05:16,645 - INFO - 127.0.0.1 - - [10/May/2026 20:05:16] "GET /static/css/style.css HTTP/1.1" 200 -
+2026-05-10 20:05:21,530 - INFO - 127.0.0.1 - - [10/May/2026 20:05:21] "GET /admin/elections HTTP/1.1" 200 -
+2026-05-10 20:05:21,547 - INFO - 127.0.0.1 - - [10/May/2026 20:05:21] "GET /static/css/style.css HTTP/1.1" 200 -
+2026-05-10 20:05:24,220 - INFO - 127.0.0.1 - - [10/May/2026 20:05:24] "GET /admin/elections HTTP/1.1" 200 -
+2026-05-10 20:05:24,242 - INFO - 127.0.0.1 - - [10/May/2026 20:05:24] "GET /static/css/style.css HTTP/1.1" 200 -
+2026-05-10 20:05:27,186 - INFO - User logged out: admin
+2026-05-10 20:05:27,188 - INFO - 127.0.0.1 - - [10/May/2026 20:05:27] "[32mGET /logout HTTP/1.1[0m" 302 -
+2026-05-10 20:05:27,203 - INFO - 127.0.0.1 - - [10/May/2026 20:05:27] "GET /login HTTP/1.1" 200 -
+2026-05-10 20:05:27,219 - INFO - 127.0.0.1 - - [10/May/2026 20:05:27] "GET /static/css/style.css HTTP/1.1" 200 -
+2026-05-10 20:05:34,223 - INFO - 127.0.0.1 - - [10/May/2026 20:05:34] "GET /register HTTP/1.1" 200 -
+2026-05-10 20:05:34,234 - INFO - 127.0.0.1 - - [10/May/2026 20:05:34] "GET /static/css/style.css HTTP/1.1" 200 -
+2026-05-10 20:06:00,081 - INFO - 127.0.0.1 - - [10/May/2026 20:06:00] "POST /register HTTP/1.1" 200 -
+2026-05-10 20:06:00,097 - INFO - 127.0.0.1 - - [10/May/2026 20:06:00] "GET /static/css/style.css HTTP/1.1" 200 -
+2026-05-10 20:06:25,148 - INFO - New registration: RishP11 (VoterID: 5678904) from 127.0.0.1
+2026-05-10 20:06:25,150 - INFO - 127.0.0.1 - - [10/May/2026 20:06:25] "[32mPOST /register HTTP/1.1[0m" 302 -
+2026-05-10 20:06:25,161 - INFO - 127.0.0.1 - - [10/May/2026 20:06:25] "GET /login HTTP/1.1" 200 -
+2026-05-10 20:06:25,173 - INFO - 127.0.0.1 - - [10/May/2026 20:06:25] "GET /static/css/style.css HTTP/1.1" 200 -
+2026-05-10 20:06:28,465 - INFO - Successful login: RishP11 from 127.0.0.1
+2026-05-10 20:06:28,467 - INFO - 127.0.0.1 - - [10/May/2026 20:06:28] "[32mPOST /login HTTP/1.1[0m" 302 -
+2026-05-10 20:06:28,491 - INFO - 127.0.0.1 - - [10/May/2026 20:06:28] "GET /vote/dashboard HTTP/1.1" 200 -
+2026-05-10 20:06:28,507 - INFO - 127.0.0.1 - - [10/May/2026 20:06:28] "GET /static/css/style.css HTTP/1.1" 200 -
+2026-05-10 20:06:35,025 - INFO - User logged out: RishP11
+2026-05-10 20:06:35,026 - INFO - 127.0.0.1 - - [10/May/2026 20:06:35] "[32mGET /logout HTTP/1.1[0m" 302 -
+2026-05-10 20:06:35,034 - INFO - 127.0.0.1 - - [10/May/2026 20:06:35] "GET /login HTTP/1.1" 200 -
+2026-05-10 20:06:35,048 - INFO - 127.0.0.1 - - [10/May/2026 20:06:35] "GET /static/css/style.css HTTP/1.1" 200 -
+2026-05-10 20:06:39,050 - INFO - Successful login: admin from 127.0.0.1
+2026-05-10 20:06:39,054 - INFO - 127.0.0.1 - - [10/May/2026 20:06:39] "[32mPOST /login HTTP/1.1[0m" 302 -
+2026-05-10 20:06:39,071 - INFO - 127.0.0.1 - - [10/May/2026 20:06:39] "GET /admin/dashboard HTTP/1.1" 200 -
+2026-05-10 20:06:39,086 - INFO - 127.0.0.1 - - [10/May/2026 20:06:39] "GET /static/css/style.css HTTP/1.1" 200 -
+2026-05-10 20:06:45,048 - INFO - 127.0.0.1 - - [10/May/2026 20:06:45] "GET /admin/users HTTP/1.1" 200 -
+2026-05-10 20:06:45,063 - INFO - 127.0.0.1 - - [10/May/2026 20:06:45] "GET /static/css/style.css HTTP/1.1" 200 -
+2026-05-10 20:06:46,603 - INFO - Admin verified user: RishP11
+2026-05-10 20:06:46,604 - INFO - 127.0.0.1 - - [10/May/2026 20:06:46] "[32mPOST /admin/users/verify/6a0097e911208e5350b99b13 HTTP/1.1[0m" 302 -
+2026-05-10 20:06:46,615 - INFO - 127.0.0.1 - - [10/May/2026 20:06:46] "GET /admin/users HTTP/1.1" 200 -
+2026-05-10 20:06:46,629 - INFO - 127.0.0.1 - - [10/May/2026 20:06:46] "GET /static/css/style.css HTTP/1.1" 200 -
+2026-05-10 20:06:50,031 - INFO - User logged out: admin
+2026-05-10 20:06:50,032 - INFO - 127.0.0.1 - - [10/May/2026 20:06:50] "[32mGET /logout HTTP/1.1[0m" 302 -
+2026-05-10 20:06:50,041 - INFO - 127.0.0.1 - - [10/May/2026 20:06:50] "GET /login HTTP/1.1" 200 -
+2026-05-10 20:06:50,053 - INFO - 127.0.0.1 - - [10/May/2026 20:06:50] "GET /static/css/style.css HTTP/1.1" 200 -
+2026-05-10 20:06:54,971 - INFO - Successful login: RishP11 from 127.0.0.1
+2026-05-10 20:06:54,973 - INFO - 127.0.0.1 - - [10/May/2026 20:06:54] "[32mPOST /login HTTP/1.1[0m" 302 -
+2026-05-10 20:06:54,984 - INFO - 127.0.0.1 - - [10/May/2026 20:06:54] "GET /vote/dashboard HTTP/1.1" 200 -
+2026-05-10 20:06:55,001 - INFO - 127.0.0.1 - - [10/May/2026 20:06:55] "GET /static/css/style.css HTTP/1.1" 200 -
+2026-05-10 20:06:58,839 - INFO - 127.0.0.1 - - [10/May/2026 20:06:58] "GET /vote/cast/6a0097a011208e5350b99b10 HTTP/1.1" 200 -
+2026-05-10 20:06:58,850 - INFO - 127.0.0.1 - - [10/May/2026 20:06:58] "GET /static/css/style.css HTTP/1.1" 200 -
+2026-05-10 20:07:02,453 - INFO - Vote cast: user=6a0097e911208e5350b99b13 election=6a0097a011208e5350b99b10 receipt=78c844e2353e6147c41b2c7b5e2e8573
+2026-05-10 20:07:02,455 - INFO - 127.0.0.1 - - [10/May/2026 20:07:02] "[32mPOST /vote/cast/6a0097a011208e5350b99b10 HTTP/1.1[0m" 302 -
+2026-05-10 20:07:02,470 - INFO - 127.0.0.1 - - [10/May/2026 20:07:02] "GET /vote/receipt/78c844e2353e6147c41b2c7b5e2e8573 HTTP/1.1" 200 -
+2026-05-10 20:07:02,486 - INFO - 127.0.0.1 - - [10/May/2026 20:07:02] "GET /static/css/style.css HTTP/1.1" 200 -
+2026-05-10 20:07:06,969 - INFO - 127.0.0.1 - - [10/May/2026 20:07:06] "GET /vote/dashboard HTTP/1.1" 200 -
+2026-05-10 20:07:06,981 - INFO - 127.0.0.1 - - [10/May/2026 20:07:06] "GET /static/css/style.css HTTP/1.1" 200 -
+2026-05-10 20:07:10,982 - INFO - 127.0.0.1 - - [10/May/2026 20:07:10] "GET /vote/dashboard HTTP/1.1" 200 -
+2026-05-10 20:07:10,993 - INFO - 127.0.0.1 - - [10/May/2026 20:07:10] "GET /static/css/style.css HTTP/1.1" 200 -
+2026-05-10 20:07:14,793 - INFO - 127.0.0.1 - - [10/May/2026 20:07:14] "GET /vote/dashboard HTTP/1.1" 200 -
+2026-05-10 20:07:14,812 - INFO - 127.0.0.1 - - [10/May/2026 20:07:14] "GET /static/css/style.css HTTP/1.1" 200 -
+2026-05-10 20:07:15,247 - INFO - 127.0.0.1 - - [10/May/2026 20:07:15] "GET /vote/dashboard HTTP/1.1" 200 -
+2026-05-10 20:07:15,268 - INFO - 127.0.0.1 - - [10/May/2026 20:07:15] "GET /static/css/style.css HTTP/1.1" 200 -
+2026-05-10 20:07:16,328 - INFO - User logged out: RishP11
+2026-05-10 20:07:16,329 - INFO - 127.0.0.1 - - [10/May/2026 20:07:16] "[32mGET /logout HTTP/1.1[0m" 302 -
+2026-05-10 20:07:16,339 - INFO - 127.0.0.1 - - [10/May/2026 20:07:16] "GET /login HTTP/1.1" 200 -
+2026-05-10 20:07:16,351 - INFO - 127.0.0.1 - - [10/May/2026 20:07:16] "GET /static/css/style.css HTTP/1.1" 200 -
+2026-05-10 20:07:20,768 - INFO - Successful login: admin from 127.0.0.1
+2026-05-10 20:07:20,772 - INFO - 127.0.0.1 - - [10/May/2026 20:07:20] "[32mPOST /login HTTP/1.1[0m" 302 -
+2026-05-10 20:07:20,786 - INFO - 127.0.0.1 - - [10/May/2026 20:07:20] "GET /admin/dashboard HTTP/1.1" 200 -
+2026-05-10 20:07:20,809 - INFO - 127.0.0.1 - - [10/May/2026 20:07:20] "GET /static/css/style.css HTTP/1.1" 200 -
+2026-05-10 20:07:23,765 - INFO - 127.0.0.1 - - [10/May/2026 20:07:23] "GET /admin/users HTTP/1.1" 200 -
+2026-05-10 20:07:23,777 - INFO - 127.0.0.1 - - [10/May/2026 20:07:23] "GET /static/css/style.css HTTP/1.1" 200 -
+2026-05-10 20:07:25,857 - INFO - 127.0.0.1 - - [10/May/2026 20:07:25] "GET /admin/dashboard HTTP/1.1" 200 -
+2026-05-10 20:07:25,870 - INFO - 127.0.0.1 - - [10/May/2026 20:07:25] "GET /static/css/style.css HTTP/1.1" 200 -
+2026-05-10 20:07:27,089 - INFO - 127.0.0.1 - - [10/May/2026 20:07:27] "GET /admin/elections HTTP/1.1" 200 -
+2026-05-10 20:07:27,101 - INFO - 127.0.0.1 - - [10/May/2026 20:07:27] "GET /static/css/style.css HTTP/1.1" 200 -
+2026-05-10 20:07:29,836 - INFO - 127.0.0.1 - - [10/May/2026 20:07:29] "GET /vote/results/6a0097a011208e5350b99b10 HTTP/1.1" 200 -
+2026-05-10 20:07:29,848 - INFO - 127.0.0.1 - - [10/May/2026 20:07:29] "GET /static/css/style.css HTTP/1.1" 200 -
+2026-05-10 20:07:33,375 - INFO - 127.0.0.1 - - [10/May/2026 20:07:33] "GET /vote/dashboard HTTP/1.1" 200 -
+2026-05-10 20:07:33,389 - INFO - 127.0.0.1 - - [10/May/2026 20:07:33] "GET /static/css/style.css HTTP/1.1" 200 -
+2026-05-10 20:07:36,173 - INFO - 127.0.0.1 - - [10/May/2026 20:07:36] "GET /vote/cast/6a0097a011208e5350b99b10 HTTP/1.1" 200 -
+2026-05-10 20:07:36,186 - INFO - 127.0.0.1 - - [10/May/2026 20:07:36] "GET /static/css/style.css HTTP/1.1" 200 -
+2026-05-10 20:07:39,099 - INFO - Vote cast: user=6a0083a67ecfb0a7db349d46 election=6a0097a011208e5350b99b10 receipt=f4855425acac08c039db52c6c23ca3a1
+2026-05-10 20:07:39,101 - INFO - 127.0.0.1 - - [10/May/2026 20:07:39] "[32mPOST /vote/cast/6a0097a011208e5350b99b10 HTTP/1.1[0m" 302 -
+2026-05-10 20:07:39,113 - INFO - 127.0.0.1 - - [10/May/2026 20:07:39] "GET /vote/receipt/f4855425acac08c039db52c6c23ca3a1 HTTP/1.1" 200 -
+2026-05-10 20:07:39,128 - INFO - 127.0.0.1 - - [10/May/2026 20:07:39] "GET /static/css/style.css HTTP/1.1" 200 -
+2026-05-10 20:07:41,090 - INFO - 127.0.0.1 - - [10/May/2026 20:07:41] "GET /vote/dashboard HTTP/1.1" 200 -
+2026-05-10 20:07:41,107 - INFO - 127.0.0.1 - - [10/May/2026 20:07:41] "GET /static/css/style.css HTTP/1.1" 200 -
+2026-05-10 20:07:43,601 - INFO - 127.0.0.1 - - [10/May/2026 20:07:43] "GET /admin/elections HTTP/1.1" 200 -
+2026-05-10 20:07:43,616 - INFO - 127.0.0.1 - - [10/May/2026 20:07:43] "GET /static/css/style.css HTTP/1.1" 200 -
+2026-05-10 20:07:45,710 - INFO - 127.0.0.1 - - [10/May/2026 20:07:45] "GET /vote/results/6a0097a011208e5350b99b10 HTTP/1.1" 200 -
+2026-05-10 20:07:45,724 - INFO - 127.0.0.1 - - [10/May/2026 20:07:45] "GET /static/css/style.css HTTP/1.1" 200 -
+2026-05-10 20:07:47,597 - INFO - 127.0.0.1 - - [10/May/2026 20:07:47] "GET /vote/dashboard HTTP/1.1" 200 -
+2026-05-10 20:07:47,610 - INFO - 127.0.0.1 - - [10/May/2026 20:07:47] "GET /static/css/style.css HTTP/1.1" 200 -
+2026-05-10 20:07:50,750 - INFO - 127.0.0.1 - - [10/May/2026 20:07:50] "GET /admin/dashboard HTTP/1.1" 200 -
+2026-05-10 20:07:50,764 - INFO - 127.0.0.1 - - [10/May/2026 20:07:50] "GET /static/css/style.css HTTP/1.1" 200 -
+2026-05-10 20:07:52,924 - INFO - 127.0.0.1 - - [10/May/2026 20:07:52] "GET /admin/users HTTP/1.1" 200 -
+2026-05-10 20:07:52,939 - INFO - 127.0.0.1 - - [10/May/2026 20:07:52] "GET /static/css/style.css HTTP/1.1" 200 -
+2026-05-10 20:07:55,877 - INFO - 127.0.0.1 - - [10/May/2026 20:07:55] "GET /admin/elections HTTP/1.1" 200 -
+2026-05-10 20:07:55,890 - INFO - 127.0.0.1 - - [10/May/2026 20:07:55] "GET /static/css/style.css HTTP/1.1" 200 -
+2026-05-10 20:07:57,043 - INFO - 127.0.0.1 - - [10/May/2026 20:07:57] "GET /admin/audit-log HTTP/1.1" 200 -
+2026-05-10 20:07:57,056 - INFO - 127.0.0.1 - - [10/May/2026 20:07:57] "GET /static/css/style.css HTTP/1.1" 200 -
+2026-05-10 20:08:01,878 - INFO - User logged out: admin
+2026-05-10 20:08:01,881 - INFO - 127.0.0.1 - - [10/May/2026 20:08:01] "[32mGET /logout HTTP/1.1[0m" 302 -
+2026-05-10 20:08:01,889 - INFO - 127.0.0.1 - - [10/May/2026 20:08:01] "GET /login HTTP/1.1" 200 -
+2026-05-10 20:08:01,903 - INFO - 127.0.0.1 - - [10/May/2026 20:08:01] "GET /static/css/style.css HTTP/1.1" 200 -
+2026-05-10 20:12:16,649 - INFO -  * Detected change in 'C:\\Users\\Rishi Priyan\\Documents\\S6\\FCS\\Secure-online-voting-system\\routes\\auth.py', reloading
+2026-05-10 20:12:17,254 - INFO -  * Restarting with stat
+2026-05-10 20:12:17,525 - INFO -  * Detected change in 'C:\\Users\\Rishi Priyan\\Documents\\S6\\FCS\\Secure-online-voting-system\\routes\\auth.py', reloading
+2026-05-10 20:12:18,048 - INFO -  * Restarting with stat
+2026-05-10 20:12:18,761 - WARNING -  * Debugger is active!
+2026-05-10 20:12:18,770 - INFO -  * Debugger PIN: 142-622-940
+2026-05-10 20:12:19,105 - WARNING -  * Debugger is active!
+2026-05-10 20:12:19,113 - INFO -  * Debugger PIN: 142-622-940
+2026-05-10 20:12:48,266 - INFO -  * Detected change in 'C:\\Users\\Rishi Priyan\\Documents\\S6\\FCS\\Secure-online-voting-system\\routes\\voting.py', reloading
+2026-05-10 20:12:48,848 - INFO -  * Restarting with stat
+2026-05-10 20:12:49,183 - INFO -  * Detected change in 'C:\\Users\\Rishi Priyan\\Documents\\S6\\FCS\\Secure-online-voting-system\\routes\\voting.py', reloading
+2026-05-10 20:12:49,320 - INFO -  * Restarting with stat
+2026-05-10 20:12:49,752 - WARNING -  * Debugger is active!
+2026-05-10 20:12:49,759 - INFO -  * Debugger PIN: 142-622-940
+2026-05-10 20:12:50,273 - WARNING -  * Debugger is active!
+2026-05-10 20:12:50,278 - INFO -  * Debugger PIN: 142-622-940
+2026-05-10 20:13:56,356 - INFO -  * Detected change in 'C:\\Users\\Rishi Priyan\\Documents\\S6\\FCS\\Secure-online-voting-system\\app.py', reloading
+2026-05-10 20:13:56,707 - INFO -  * Detected change in 'C:\\Users\\Rishi Priyan\\Documents\\S6\\FCS\\Secure-online-voting-system\\app.py', reloading
+2026-05-10 20:13:56,908 - INFO -  * Restarting with stat
+2026-05-10 20:13:57,016 - INFO -  * Restarting with stat
+2026-05-10 20:13:58,143 - WARNING -  * Debugger is active!
+2026-05-10 20:13:58,152 - INFO -  * Debugger PIN: 142-622-940
+2026-05-10 20:13:58,229 - WARNING -  * Debugger is active!
+2026-05-10 20:13:58,239 - INFO -  * Debugger PIN: 142-622-940
+2026-05-10 20:14:18,441 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2026-05-10 20:14:18,443 - INFO - [33mPress CTRL+C to quit[0m
+2026-05-10 20:14:18,445 - INFO -  * Restarting with stat
+2026-05-10 20:14:19,228 - WARNING -  * Debugger is active!
+2026-05-10 20:14:19,234 - INFO -  * Debugger PIN: 142-622-940
+2026-05-10 20:14:21,250 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2026-05-10 20:14:21,251 - INFO - [33mPress CTRL+C to quit[0m
+2026-05-10 20:14:21,253 - INFO -  * Restarting with stat
+2026-05-10 20:14:22,123 - WARNING -  * Debugger is active!
+2026-05-10 20:14:22,129 - INFO -  * Debugger PIN: 142-622-940
