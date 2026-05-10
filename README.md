@@ -84,7 +84,7 @@ A cybersecurity-focused web application for secure, transparent, and tamper-proo
 *"**Vote Integrity:** After voting, the user gets this SHA-256 hash receipt. This hash is generated using the Voter ID and a random nonce. If anyone tries to change the vote in the database, this hash would break, providing an immutable audit trail."*
 
 ### **Part 5: Conclusion (4:30 - 5:00)**
-**Action:** Show the **`/security`** page in the browser.
+Action: Show the **`/security`** page in the browser.
 "Finally, I created this Security Summary page which lists all 16 layers of protection, from HSTS to Audit Logging. This system ensures a 'One-Person-One-Vote' policy while maintaining complete data privacy and integrity. Thank you."
 ---
 
