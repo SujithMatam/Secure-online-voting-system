@@ -85,7 +85,7 @@ A cybersecurity-focused web application for secure, transparent, and tamper-proo
 
 ### **Part 5: Conclusion (4:30 - 5:00)**
 **Action:** Show the **`/security`** page in the browser.
-*"Finally, I created this Security Summary page which lists all 16 layers of protection, from HSTS to Audit Logging. This system ensures a 'One-Person-One-Vote' policy while maintaining complete data privacy and integrity. Thank you."*
+"Finally, I created this Security Summary page which lists all 16 layers of protection, from HSTS to Audit Logging. This system ensures a 'One-Person-One-Vote' policy while maintaining complete data privacy and integrity. Thank you."
 ---
 
 
