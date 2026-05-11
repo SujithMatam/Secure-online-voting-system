@@ -1,0 +1,92 @@
+# =========================================================================
+# 🔒 SECURE ONLINE VOTING SYSTEM - ADVANCED PRESENTATION SCRIPT
+# =========================================================================
+# This script is optimized for maximum technical marks (15/15).
+# It uses industry-standard terminology: CIA Triad, Non-repudiation, etc.
+# =========================================================================
+
+---
+## PART 1: INTRODUCTION (0:00 - 0:45)
+---
+
+[SPEECH]:
+"Hello, I am presenting my Secure E-Voting Framework, a robust web application designed to handle digital elections while maintaining the highest standards of the CIA Triad: Confidentiality, Integrity, and Availability. 
+
+In digital democracy, trust is the most critical asset. My project doesn't just provide a voting interface; it implements a 'Defense-in-Depth' architecture. This means we have redundant security layers protecting the application at the network level, the session level, and the database level. I have mapped this demonstration directly to the three project rubrics to show full compliance with cybersecurity best practices."
+
+---
+## PART 2: RUBRIC 1 - AUTHENTICATION & AUTHORIZATION (0:45 - 1:45)
+---
+
+[ACTION]: Open Browser to http://127.0.0.1:5000/ login page.
+[SPEECH]:
+"For Rubric 1, we focus on Identity and Access Management (IAM). My system uses a Multi-Tiered Authorization model. 
+
+Registration is restricted through strict Voter-to-ID binding. Unlike basic applications, identity here is not self-asserted; it requires Manual Administrative Verification. This creates a human-in-the-loop security check that prevents automated 'Sybil attacks' or mass fake-account creation which could skew election results."
+
+[CODE]: Open 'utils/decorators.py' in VS Code.
+[SPEECH]:
+"To enforce this, I created custom Python decorators. You can see `@admin_required` and `@verified_required` here. These act as server-side gatekeepers. Even if a malicious user discovers a restricted URL, the server performs a deep-session check on every single request. If the user's role or verification status doesn't match, the request is terminated before any logic is executed."
+
+[ATTACK DEMO 1 - PRIVILEGE ESCALATION]:
+1. Login as a Regular Voter.
+2. Manually change the URL to: http://127.0.0.1:5000/admin/dashboard
+3. [SPEECH]: "Here I am attempting a 'Vertical Privilege Escalation' attack by guessing the admin URL. The system identifies the unauthorized role and immediately redirects me, logging the attempt in our audit log for forensics."
+
+---
+## PART 3: RUBRIC 2 - INPUT VALIDATION & ATTACK PREVENTION (1:45 - 3:15)
+---
+
+[ACTION]: Go to the Registration Page in the browser.
+[SPEECH]:
+"For Rubric 2, we tackle the OWASP Top 10 vulnerabilities. My validation logic is 'Deny-by-Default', meaning we only accept exactly what we expect."
+
+[ATTACK DEMO 2 - NOSQL INJECTION]:
+1. In the Login field, type: admin
+2. In the Password field, type: {"$gt": ""}
+3. [CODE]: Show 'routes/auth.py' (Check for `isinstance(username, str)`).
+4. [SPEECH]: "I'm attempting a NoSQL Injection bypass. Most MongoDB apps fail here because they accept raw JSON objects. My code uses 'Strict Type Enforcement'—we check if the input is a primitive string. By forcing the data type, we neutralize the injection before it reaches the database driver."
+
+[ATTACK DEMO 3 - BRUTE FORCE]:
+1. Try logging in 5 times quickly with wrong passwords.
+2. Show the "Too Many Requests" error.
+3. [SPEECH]: "I've also implemented an Adaptive Rate Limiter. This mitigates automated dictionary attacks and protects our server resources, ensuring 'Availability' even during a targeted brute-force campaign."
+
+[ATTACK DEMO 4 - XSS (CROSS-SITE SCRIPTING)]:
+1. In the Username field during registration, type: <script>alert('Hacked')</script>
+2. Login as admin and view that user.
+3. [SPEECH]: "I've attempted a Stored XSS attack. The system defends against this in three ways: First, the `bleach` library sanitizes the input; second, Jinja2 auto-escapes the output; and third, our Content Security Policy (CSP) header prevents any unauthorized JavaScript execution in the browser."
+
+---
+## PART 4: RUBRIC 3 - DATA PROTECTION (3:15 - 4:30)
+---
+
+[ACTION]: Show the Vote Receipt page in the browser.
+[SPEECH]:
+"Rubric 3 covers Data Protection and Integrity. We must ensure 'Non-repudiation'—the guarantee that a vote cannot be denied or changed."
+
+[CODE]: Open 'utils/security.py'.
+[SPEECH]:
+"For Data-at-Rest, I use bcrypt with a work-factor of 12. For the votes, I’ve implemented a SHA-256 integrity pipeline. Every vote generates a unique cryptographic digest."
+
+[ATTACK DEMO 5 - DOUBLE VOTING]:
+1. Try to navigate back to the voting page after casting a vote.
+2. [CODE]: Show 'app.py' (Line 97 - the `unique_index`).
+3. [SPEECH]: "To prevent the 'Double Voting' flaw, I've implemented a Unique Compound Index at the database layer. This is a physical constraint that prevents any race conditions. Even if a user clicks 'Submit' twice simultaneously, the database will reject the second entry, maintaining a 'One-Person-One-Vote' integrity."
+
+[ATTACK DEMO 6 - CSRF (CROSS-SITE REQUEST FORGERY)]:
+1. Inspect the vote button, delete the hidden `csrf_token` input.
+2. Try to submit the vote.
+3. [SPEECH]: "By manually deleting the CSRF token, the request fails. This proves that every transaction is tied to a unique, cryptographically signed token, preventing attackers from forging actions on behalf of a logged-in user."
+
+---
+## PART 5: CONCLUSION (4:30 - 5:00)
+---
+
+[ACTION]: Show the http://127.0.0.1:5000/security page.
+[SPEECH]:
+"In conclusion, this framework addresses the complex security requirements of electronic voting. By combining HSTS for transport security, bcrypt for storage security, and SHA-256 for integrity verification, I have built a system that is transparent, auditable, and resilient. This implementation fully satisfies all requirements of the project rubrics. Thank you for your attention."
+
+# =========================================================================
+# END OF SCRIPT
+# =========================================================================

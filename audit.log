@@ -389,3 +389,70 @@
 2026-05-10 22:04:43,377 - INFO - 127.0.0.1 - - [10/May/2026 22:04:43] "GET /static/css/style.css HTTP/1.1" 200 -
 2026-05-10 22:10:44,048 - INFO - 127.0.0.1 - - [10/May/2026 22:10:44] "GET /security HTTP/1.1" 200 -
 2026-05-10 22:10:44,081 - INFO - 127.0.0.1 - - [10/May/2026 22:10:44] "GET /static/css/style.css HTTP/1.1" 200 -
+2026-05-11 03:58:41,502 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2026-05-11 03:58:41,504 - INFO - [33mPress CTRL+C to quit[0m
+2026-05-11 03:58:41,507 - INFO -  * Restarting with stat
+2026-05-11 03:58:42,487 - WARNING -  * Debugger is active!
+2026-05-11 03:58:42,495 - INFO -  * Debugger PIN: 142-622-940
+2026-05-11 03:58:48,901 - INFO - 127.0.0.1 - - [11/May/2026 03:58:48] "[32mGET / HTTP/1.1[0m" 302 -
+2026-05-11 03:58:49,015 - INFO - 127.0.0.1 - - [11/May/2026 03:58:49] "GET /login HTTP/1.1" 200 -
+2026-05-11 03:58:49,107 - INFO - 127.0.0.1 - - [11/May/2026 03:58:49] "GET /static/css/style.css HTTP/1.1" 200 -
+2026-05-11 03:58:49,210 - INFO - 127.0.0.1 - - [11/May/2026 03:58:49] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2026-05-11 03:58:53,141 - INFO - 127.0.0.1 - - [11/May/2026 03:58:53] "GET /security HTTP/1.1" 200 -
+2026-05-11 03:58:53,156 - INFO - 127.0.0.1 - - [11/May/2026 03:58:53] "GET /static/css/style.css HTTP/1.1" 200 -
+2026-05-11 03:59:13,950 - INFO - 127.0.0.1 - - [11/May/2026 03:59:13] "GET /login HTTP/1.1" 200 -
+2026-05-11 03:59:13,964 - INFO - 127.0.0.1 - - [11/May/2026 03:59:13] "GET /static/css/style.css HTTP/1.1" 200 -
+2026-05-11 03:59:24,090 - INFO - Successful login: admin from 127.0.0.1
+2026-05-11 03:59:24,097 - INFO - 127.0.0.1 - - [11/May/2026 03:59:24] "[32mPOST /login HTTP/1.1[0m" 302 -
+2026-05-11 03:59:24,139 - INFO - 127.0.0.1 - - [11/May/2026 03:59:24] "GET /admin/dashboard HTTP/1.1" 200 -
+2026-05-11 03:59:24,154 - INFO - 127.0.0.1 - - [11/May/2026 03:59:24] "GET /static/css/style.css HTTP/1.1" 200 -
+2026-05-11 03:59:35,100 - INFO - 127.0.0.1 - - [11/May/2026 03:59:35] "GET /admin/users HTTP/1.1" 200 -
+2026-05-11 03:59:35,119 - INFO - 127.0.0.1 - - [11/May/2026 03:59:35] "GET /static/css/style.css HTTP/1.1" 200 -
+2026-05-11 03:59:38,401 - INFO - 127.0.0.1 - - [11/May/2026 03:59:38] "GET /admin/dashboard HTTP/1.1" 200 -
+2026-05-11 03:59:38,420 - INFO - 127.0.0.1 - - [11/May/2026 03:59:38] "GET /static/css/style.css HTTP/1.1" 200 -
+2026-05-11 03:59:40,226 - INFO - 127.0.0.1 - - [11/May/2026 03:59:40] "GET /admin/elections/create HTTP/1.1" 200 -
+2026-05-11 03:59:40,245 - INFO - 127.0.0.1 - - [11/May/2026 03:59:40] "GET /static/css/style.css HTTP/1.1" 200 -
+2026-05-11 03:59:56,532 - INFO - 127.0.0.1 - - [11/May/2026 03:59:56] "GET /admin/users HTTP/1.1" 200 -
+2026-05-11 03:59:56,557 - INFO - 127.0.0.1 - - [11/May/2026 03:59:56] "GET /static/css/style.css HTTP/1.1" 200 -
+2026-05-11 03:59:57,759 - INFO - 127.0.0.1 - - [11/May/2026 03:59:57] "GET /admin/elections HTTP/1.1" 200 -
+2026-05-11 03:59:57,779 - INFO - 127.0.0.1 - - [11/May/2026 03:59:57] "GET /static/css/style.css HTTP/1.1" 200 -
+2026-05-11 04:00:13,033 - INFO - 127.0.0.1 - - [11/May/2026 04:00:13] "GET /vote/results/6a0097a011208e5350b99b10 HTTP/1.1" 200 -
+2026-05-11 04:00:13,049 - INFO - 127.0.0.1 - - [11/May/2026 04:00:13] "GET /static/css/style.css HTTP/1.1" 200 -
+2026-05-11 04:00:16,597 - INFO - 127.0.0.1 - - [11/May/2026 04:00:16] "GET /vote/dashboard HTTP/1.1" 200 -
+2026-05-11 04:00:16,612 - INFO - 127.0.0.1 - - [11/May/2026 04:00:16] "GET /static/css/style.css HTTP/1.1" 200 -
+2026-05-11 04:00:21,356 - INFO - 127.0.0.1 - - [11/May/2026 04:00:21] "GET /admin/audit-log HTTP/1.1" 200 -
+2026-05-11 04:00:21,368 - INFO - 127.0.0.1 - - [11/May/2026 04:00:21] "GET /static/css/style.css HTTP/1.1" 200 -
+2026-05-11 04:00:40,500 - INFO - 127.0.0.1 - - [11/May/2026 04:00:40] "GET /admin/users HTTP/1.1" 200 -
+2026-05-11 04:00:40,517 - INFO - 127.0.0.1 - - [11/May/2026 04:00:40] "GET /static/css/style.css HTTP/1.1" 200 -
+2026-05-11 04:00:51,236 - INFO - User logged out: admin
+2026-05-11 04:00:51,237 - INFO - 127.0.0.1 - - [11/May/2026 04:00:51] "[32mGET /logout HTTP/1.1[0m" 302 -
+2026-05-11 04:00:51,252 - INFO - 127.0.0.1 - - [11/May/2026 04:00:51] "GET /login HTTP/1.1" 200 -
+2026-05-11 04:00:51,269 - INFO - 127.0.0.1 - - [11/May/2026 04:00:51] "GET /static/css/style.css HTTP/1.1" 200 -
+2026-05-11 04:01:04,111 - INFO - Successful login: Sujith from 127.0.0.1
+2026-05-11 04:01:04,114 - INFO - 127.0.0.1 - - [11/May/2026 04:01:04] "[32mPOST /login HTTP/1.1[0m" 302 -
+2026-05-11 04:01:04,133 - INFO - 127.0.0.1 - - [11/May/2026 04:01:04] "GET /vote/dashboard HTTP/1.1" 200 -
+2026-05-11 04:01:04,161 - INFO - 127.0.0.1 - - [11/May/2026 04:01:04] "GET /static/css/style.css HTTP/1.1" 200 -
+2026-05-11 04:01:22,777 - INFO - User logged out: Sujith
+2026-05-11 04:01:22,778 - INFO - 127.0.0.1 - - [11/May/2026 04:01:22] "[32mGET /logout HTTP/1.1[0m" 302 -
+2026-05-11 04:01:22,791 - INFO - 127.0.0.1 - - [11/May/2026 04:01:22] "GET /login HTTP/1.1" 200 -
+2026-05-11 04:01:22,809 - INFO - 127.0.0.1 - - [11/May/2026 04:01:22] "GET /static/css/style.css HTTP/1.1" 200 -
+2026-05-11 04:02:38,047 - INFO - 127.0.0.1 - - [11/May/2026 04:02:38] "GET /security HTTP/1.1" 200 -
+2026-05-11 04:02:38,068 - INFO - 127.0.0.1 - - [11/May/2026 04:02:38] "GET /static/css/style.css HTTP/1.1" 200 -
+2026-05-11 04:02:45,970 - INFO - 127.0.0.1 - - [11/May/2026 04:02:45] "GET /security HTTP/1.1" 200 -
+2026-05-11 04:02:45,999 - INFO - 127.0.0.1 - - [11/May/2026 04:02:45] "GET /static/css/style.css HTTP/1.1" 200 -
+2026-05-11 04:02:49,634 - INFO - 127.0.0.1 - - [11/May/2026 04:02:49] "[32mGET / HTTP/1.1[0m" 302 -
+2026-05-11 04:02:49,653 - INFO - 127.0.0.1 - - [11/May/2026 04:02:49] "GET /login HTTP/1.1" 200 -
+2026-05-11 04:02:49,668 - INFO - 127.0.0.1 - - [11/May/2026 04:02:49] "GET /static/css/style.css HTTP/1.1" 200 -
+2026-05-11 04:03:33,568 - INFO - 127.0.0.1 - - [11/May/2026 04:03:33] "GET /security HTTP/1.1" 200 -
+2026-05-11 04:03:33,581 - INFO - 127.0.0.1 - - [11/May/2026 04:03:33] "GET /static/css/style.css HTTP/1.1" 200 -
+2026-05-11 04:03:37,050 - INFO - Successful login: Sujith from 127.0.0.1
+2026-05-11 04:03:37,052 - INFO - 127.0.0.1 - - [11/May/2026 04:03:37] "[32mPOST /login HTTP/1.1[0m" 302 -
+2026-05-11 04:03:37,068 - INFO - 127.0.0.1 - - [11/May/2026 04:03:37] "GET /vote/dashboard HTTP/1.1" 200 -
+2026-05-11 04:03:37,088 - INFO - 127.0.0.1 - - [11/May/2026 04:03:37] "GET /static/css/style.css HTTP/1.1" 200 -
+2026-05-11 04:03:39,703 - INFO - User logged out: Sujith
+2026-05-11 04:03:39,704 - INFO - 127.0.0.1 - - [11/May/2026 04:03:39] "[32mGET /logout HTTP/1.1[0m" 302 -
+2026-05-11 04:03:39,714 - INFO - 127.0.0.1 - - [11/May/2026 04:03:39] "GET /login HTTP/1.1" 200 -
+2026-05-11 04:03:39,726 - INFO - 127.0.0.1 - - [11/May/2026 04:03:39] "GET /static/css/style.css HTTP/1.1" 200 -
+2026-05-11 04:03:41,011 - INFO - 127.0.0.1 - - [11/May/2026 04:03:41] "GET /register HTTP/1.1" 200 -
+2026-05-11 04:03:41,025 - INFO - 127.0.0.1 - - [11/May/2026 04:03:41] "GET /static/css/style.css HTTP/1.1" 200 -
